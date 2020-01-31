@@ -39,6 +39,7 @@ test-suite hasql-notifications-test
                      , text
                      , tmp-postgres
                      , async
+                     , postgres-options
   ghc-options:         -Wall
   default-language:    Haskell2010
 
