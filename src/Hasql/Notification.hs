@@ -38,20 +38,18 @@ module Hasql.Notification
      , getBackendPID
      ) where
 
-import           Control.Applicative (pure)
 import           Control.Exception (try)
-import           Control.Monad (void)
 import           Control.Monad.Except
 import qualified Data.ByteString as B
 import qualified Database.PostgreSQL.LibPQ as PQ
 import           GHC.IO.Exception (IOException(..),IOErrorType(ResourceVanished))
 import           Hasql.Connection
-import           System.Posix.Types (CPid,Fd)
+import           System.Posix.Types (CPid)
 #if defined(mingw32_HOST_OS)
 import           Control.Concurrent (threadDelay)
 #else
 import           GHC.Conc (atomically)
-import           Control.Concurrent (threadWaitReadSTM,threadDelay,forkIO)
+import           Control.Concurrent (threadWaitReadSTM)
 #endif
 
 -- | A single notification returned by PostgreSQL
