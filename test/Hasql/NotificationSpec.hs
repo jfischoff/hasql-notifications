@@ -1,8 +1,4 @@
 {-# LANGUAGE OverloadedStrings, ScopedTypeVariables #-}
-module Hasql.NotificationSpec
-  ( spec
-  ) where
-
 import           Control.Exception
 import           Data.Either
 import           Data.Maybe
@@ -19,6 +15,9 @@ import           Data.Foldable
 import           Control.Monad ((<=<))
 import           Data.ByteString (ByteString)
 import           Database.PostgreSQL.Simple.Options as Options
+
+main :: IO ()
+main = hspec spec
 
 aroundAll :: forall a. ((a -> IO ()) -> IO ()) -> SpecWith a -> Spec
 aroundAll withFunc specWith = do

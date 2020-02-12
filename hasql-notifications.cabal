@@ -28,8 +28,7 @@ library
 test-suite hasql-notifications-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
-  other-modules:     Hasql.NotificationSpec
-  main-is:             Spec.hs
+  main-is:             Hasql/NotificationSpec.hs
   build-depends:       base
                      , bytestring
                      , hasql
