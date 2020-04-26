@@ -6,8 +6,8 @@ homepage:            https://github.com/cocreature/hasql-notifications#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Moritz Kiefer
-maintainer:          moritz.kiefer@purelyfunctional.org
-copyright:           2016
+maintainer:          jonathan.g.fischoff@gmail.com
+copyright:           2020
 category:            Unknown
 build-type:          Simple
 -- extra-source-files:
