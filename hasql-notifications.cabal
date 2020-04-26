@@ -1,8 +1,8 @@
-name:                hasql-notifications
+name:                hasql-notify
 version:             0.1.0.0
 synopsis:            Support for PostgreSQL notifications in hasql
 description:         Please see README.md
-homepage:            https://github.com/cocreature/hasql-notifications#readme
+homepage:            https://github.com/jfischoff/hasql-notifications#readme
 license:             BSD3
 license-file:        LICENSE
 author:              Moritz Kiefer
@@ -10,7 +10,6 @@ maintainer:          jonathan.g.fischoff@gmail.com
 copyright:           2020
 category:            Unknown
 build-type:          Simple
--- extra-source-files:
 cabal-version:       >=1.10
 tested-with: GHC == 7.8.4, GHC == 7.10.3, GHC == 8.0.1
 
